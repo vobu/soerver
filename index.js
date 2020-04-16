@@ -12,10 +12,14 @@ const argv = yargs
     .alias("p", "port")
     .default("dir", "./")
     .alias("dir", "d")
-    .default("proxyrc", "./proxyrc.json")
+    .default("proxyrc", "")
     .alias("proxyrc", "x").argv
 
-const port = argv.p
 const soerver = require("./lib/soerver")({ proxyFile: argv.proxyrc, serveDir: argv.dir })
 
-soerver.listen(port, () => console.log(`Running at http://localhost:${port}`))
+let msg = ""
+if (argv.proxyrc !== "") {
+    msg += `🏎  proxy rules detected in ${argv.proxyrc}!\n`
+}
+msg += `🕺 at http://localhost:${argv.p} for ${argv.dir}`
+soerver.listen(argv.p, () => console.log(msg))
