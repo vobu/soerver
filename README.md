@@ -1,4 +1,6 @@
-# soerver [![npm version](https://img.shields.io/badge/npm/v/:soerver)](https://img.shields.io/badge/npm/v/:soerver)
+# soerver
+
+[![npm Package](https://img.shields.io/npm/v/soerver.svg)](https://www.npmjs.com/package/soerver)
 
 easy peasy http server with proxy capability bolted in.  
 it's essentially a cli wrapper around [`serve`](https://www.npmjs.com/package/serve) and [`http-proxy`](https://www.npmjs.com/package/http-proxy).
