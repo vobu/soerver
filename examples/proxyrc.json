@@ -1,5 +1,5 @@
 {
-  "/nw/": {
+  "/nw": {
     "target": "https://services.odata.org/V2/Northwind/Northwind.svc/",
     "secure": false,
     "changeOrigin": true
