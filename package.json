@@ -1,6 +1,6 @@
 {
   "name": "soerver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "easy peasy http server with proxy capability bolted in",
   "repository": {},
   "bin": {
